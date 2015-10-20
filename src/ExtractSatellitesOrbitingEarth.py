@@ -2,7 +2,7 @@
 ''' The data of all of the satellites orbiting the Earth was 
 acquired from the UCS Satellite Database located at:
 www.ucsusa.org/satellite_database
-The version used here is  the most recent'''
+The version used here is the most recent'''
 
 import httplib2
 from bs4 import BeautifulSoup, SoupStrainer
@@ -33,3 +33,5 @@ with open("UCS_Satellite_Database_MostRecent.xls", "wb") as code:
 	code.write(req.content)
 #This file has all of the current satellites orbiting our planet
 #(Updated approximately every 3 months by UCS)
+
+

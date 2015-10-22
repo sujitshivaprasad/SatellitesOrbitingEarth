@@ -23,22 +23,18 @@ max_rows = worksheet.nrows #max rows in sheet
 max_cols = worksheet.ncols #max columns in sheet
 IndiaNum = []; USANum = []
 
-def getData():
-	for i in range(0, max_rows):
-		if worksheet.cell(i,1).value == 'India':
-			#print('Found!', i+1)
-			IndiaNum.append(i+1) #All of India's satellite cell values
-		elif worksheet.cell(i,1).value == 'USA':
-			USANum.append(i+1) #All of USA's satellite cell values
+for i in range(0, max_rows):
+	if worksheet.cell(i,1).value == 'India':
+		#print('Found!', i+1)
+		IndiaNum.append(i+1) #All of India's satellite cell values
+	elif worksheet.cell(i,1).value == 'USA':
+		USANum.append(i+1) #All of USA's satellite cell values
 
-	NumIndia = len(IndiaNum) #Count India's satellites
-	NumUSA = len(USANum) #Count USA's satellites
+NumIndia = len(IndiaNum) #Count India's satellites
+NumUSA = len(USANum) #Count USA's satellites
 
-def main():
-	getData()
-	print NumUSA
 
-main()
+
 
 
 

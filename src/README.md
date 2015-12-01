@@ -4,4 +4,4 @@
 
 In this repository, I scrape [this webpage](http://www.ucsusa.org/nuclear-weapons/space-weapons/satellite-database.html) and download the most up to date excel file containing the most up to date list of satellites orbiting the planet.
 
-Now, I have plans to use this data for basic visualizations and other data analytics. Possible some machine learning/data analytics, but I would like to visualize the data so that there is easy access to see the current satellites orbiting the Earth.
+Now, I have plans to use this data for basic visualizations and other data analytics. I would like to visualize the data so that there is easy access to see the current satellites orbiting the Earth.

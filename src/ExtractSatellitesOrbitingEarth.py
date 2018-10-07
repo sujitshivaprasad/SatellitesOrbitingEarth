@@ -25,12 +25,13 @@ for link in links:
 			foundLink = myLink.group(1)
 			#print(foundLink)
 
-
 #Now that we have the link to the most up to date excel file
 #We can download and save it
 req = requests.get(foundLink)
 with open("UCS_Satellite_Database_MostRecent.xls", "wb") as code:
 	code.write(req.content)
+	print('Updated the Satellite Spreadsheet')
+
 #This file has all of the current satellites orbiting our planet
 #(Updated approximately every 3 months by UCS)
 
